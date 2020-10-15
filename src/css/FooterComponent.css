@@ -1,0 +1,22 @@
+.footer {
+	cursor: default;
+
+	color:  #ee6055;
+}
+.footer:hover {
+    animation: color-change 1s;
+    color:  #CA3CFF;
+}
+@keyframes color-change {
+	from {
+		color: #ee6055;
+	}
+	to {
+		color:#CA3CFF;
+	}
+}
+
+.footer-link {
+	color: #6c63ff;
+	text-decoration: none;
+}
