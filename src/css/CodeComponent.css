@@ -36,6 +36,5 @@
 
 .code-container:hover .copy-button{
     color: #155724;
-    background-color: #d4edda;
-    transform: scale(1.25);
+    transform: scale(1.15);
 }
