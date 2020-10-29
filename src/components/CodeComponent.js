@@ -1,15 +1,15 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "../css/CodeComponent.css";
 function CodeComponent(props) {
 	const { children } = props;
-    const [copyState, setCopyState] = useState("copy")
+	const [copyState, setCopyState] = useState("copy");
 	const copyCodeToClipboard = () => {
 		var dummy = document.createElement("textarea");
 		document.body.appendChild(dummy);
-        dummy.value = children.replace(",","\n");
+		dummy.value = children.replace(",", "\n");
 		dummy.select();
-        document.execCommand("copy");
-        setCopyState("copied");
+		document.execCommand("copy");
+		setCopyState("copied");
 		document.body.removeChild(dummy);
 	};
 
