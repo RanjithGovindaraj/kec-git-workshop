@@ -3,7 +3,7 @@ import "./App.css";
 import CodeComponent from "./components/CodeComponent";
 import FooterComponent from "./components/FooterComponent";
 import HeaderComponent from "./components/HeaderComponent";
-// { "comments": "#dd8888" }
+
 function App() {
 	const [dark, setDark] = useState(false);
 
@@ -104,6 +104,75 @@ function App() {
 						<CodeComponent>git reset --hard</CodeComponent>
 					</div>
 					<div className="divider"></div>
+					{/* branches */}
+					<div>
+						<h1>Branches</h1>
+						<p>
+							<div>
+								{" "}
+								<a href="https://codelikethis.com/lessons/git/simplest-workflow.jpg">
+									source for the image I showed
+								</a>
+							</div>
+							<br />
+							Branches are a lightweight tool for managing change
+							in Git.A branch in Git is simply a lightweight
+							movable pointer to one of these commits. The default
+							branch name in Git is master. As you start making
+							commits, you’re given a master branch that points to
+							the last commit you made. Every time you commit, the
+							master branch pointer moves forward automatically.
+						</p>
+						<CodeComponent>
+							git checkout -b new_branch_name
+						</CodeComponent>
+						<CodeComponent>
+							git checkout branch_you_want_to_move
+						</CodeComponent>
+					</div>
+					<div className="divider"></div>
+					{/* git remote */}
+					<div>
+						<h1>git remote</h1>
+						<p>
+							The <code>git remote</code> command lets you create,
+							view, and delete connections to other repositories.
+						</p>
+						<CodeComponent>git remote -v</CodeComponent>
+						<CodeComponent>git remote add NAME URL</CodeComponent>
+					</div>
+					<div className="divider"></div>
+					<div>
+						<h1>git push</h1>
+						<p>
+							The <code>git push</code> command is used to upload
+							local repository content to a remote repository.
+							Pushing is how you transfer commits from your local
+							repository to a remote repo.
+						</p>
+						<CodeComponent>
+							git push remote your_branch
+						</CodeComponent>
+					</div>
+					<div className="divider"></div>
+					<div>
+						<h1>Sources to Learn more</h1>
+						<div>
+							<a href="https://codelikethis.com/lessons/git">
+								https://codelikethis.com/lessons/git
+							</a>
+						</div>
+						<div>
+							<a href="https://www.atlassian.com/git/tutorials">
+								https://www.atlassian.com/git/tutorials
+							</a>
+						</div>
+						<div>
+							<a href="https://git-scm.com/docs">
+								https://git-scm.com/docs
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 			<FooterComponent />
