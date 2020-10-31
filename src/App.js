@@ -131,6 +131,13 @@ function App() {
 						</CodeComponent>
 					</div>
 					<div className="divider"></div>
+					<div>
+						<h1>Git merge</h1>
+						<p>
+							<code>git merge</code> is used to merge two branches into one.
+						</p>
+						<CodeComponent>git merge BRANCH_NAME</CodeComponent>
+					</div>
 					{/* git remote */}
 					<div>
 						<h1>git remote</h1>
